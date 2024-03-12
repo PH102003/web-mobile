@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+</head>
+<body>
+    <h1>
+        <b>Cadastro de Usuário</b>    
+    </h1>
+    
+    <form action="cadastro-usuario" onsubmit=" return confirmarCadastro()">
+        <fieldset>
+        <legend><b>Informações</b></legend>
+        Nome: <input type="text" name="nome" required placeholder="Ex.: Pedro Henrique"><br>
+        E-mail: <input type="email" name="e-mail" required placeholder="Ex.:joaozinho23@gmail.com"><br>
+        Senha:<input type="password" name="senha" required><br>
+        Data de Nascimento: <input type="date" name="data" required><br>
+        Sexo: <select name="secao" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select><br>
+        <input type="text" list="estados" required placeholder="Digite ou selecione o estado que você mora:">
+        <datalist id="estados">
+            <option value="Pernambuco">PE</option>
+            <option value="Paraíba">PB</option>
+            <option value="Ceará">CE</option>
+            <option value="Rio Grande do Norte">RN</option>
+            <option value="Bahia">BA</option>
+            <option value="Alagoas">AL</option>
+            <option value= "Sergipe">SE</option>
+            <option value="Maranhão">MA</option>
+            <option value="Piauí">PI</option>
+        </datalist>
+                
+        <input type="submit" value="Cadastrar"><br>
+        <a href="./login.html">Já tem login? Clique aqui!</a>
+        </fieldset>
+
+        </form>
+        <script>
+            function confirmarCadastro(){
+                window.alert('Cadastro Concluído!');
+            }
+        </script>
+           
+</body>
+
+</html>

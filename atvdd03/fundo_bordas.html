@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    @font-face {
-        font-family: 'Monofonto';
-        src: url('caminho/para/monofonto.ttf') format('truetype');
-    }    
     <style>
-        
+      h1 {
+        background-color: red;
+        border: 2px solid black;
+         /* add fundo pra tag "h1" */
+      }
 
-        body{
-            background-image: "vault.jpg";
-        }
+      /*adicionando fonte "monofonto" */
+      /*imagem de fundo, deixando centralizada*/
+      body {
+        background-image: url("enclave.jpg");
+        background-size: auto; /* ajuste de tamanho da imagem pra caber dentro da janela */
+        background-repeat: no-repeat; /* tira a 'repetição' da imagem */
+        background-position: top; /* 'centraliza' a imagem na tela */
+
+        font-family: "Monofonto", monospace;
+        src: url(c:\Users\pedro\Downloads\monofonto\monofontorg.otf)
+          format("otf");
+      }
     </style>
-   
-</head>
-<body>
-    <h1>Título </h1>
-    
-    
-</body>
+  </head>
+
+  <body>
+    <div style="text-align: center">
+        <h1>Welcome!</h1>
+    </div>
+  </body>
 </html>
